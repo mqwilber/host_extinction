@@ -1,0 +1,22 @@
+Metadata for formatted_dd_data.csv
+----------------------------------
+
+size: The Bd load on an individual frog at time t
+sizeNext: the Bd load on an individual frog at time t + 1
+swab_id: Unique ID for a given swab on a given frog on a given date.
+         The ID is the ID of the later swab.
+time: Number of days between swabs
+Day: The day of the experiment on which the second swab was taken.
+     0 indicates the beginning of the experiment
+individual: Unique ID for individual frog
+density: The number of adult frogs in the tank
+weight: The weight of the frog in grams
+svl: The snout-vent length of the frog in mm
+sex: The sex of the frog
+ze_tadpoles: The number of zoospores on tadpoles in the given tank at time t
+tank_num: The number of the tank
+ze_frogs: The number of zoospores on frogs in the given tank at time t
+num_infected: The number of infected frogs in the given tank at time t
+cum_ze_frogs: Cumulative number of ZEs on frogs in a given tank at each time point
+cum_ze_tadpoles: Cumulative number of ZEs on tadpoles in a given tank at each time point
+

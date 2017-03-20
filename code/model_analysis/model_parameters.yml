@@ -1,0 +1,54 @@
+# Parameters for model used in hybrid model
+
+ipm: # IPM parameters
+    zspore_prod: 1 # Proportion of zoospore production relative to load
+
+    linear_temp: TRUE
+    mean_tad_load: 1487.036 # The mean tadpole load as calculated from
+                            # ../data/archival/DensExpt.csv. Load data and use
+                            # mean(dat[lifestage == "tadpole", ][, ZE], na.rm=T)
+    tad_survival: [0.9868945, 0.9970807, 0.9970807] # Tadpole survival probability for each 3 day time step in
+                      # IPM. Values from Briggs but converted to the 122 day time scale
+
+    transmission_type: "zoospore_pool_infection_dd" #"zoospore_pool_infection" #"density_dependent_individuals" "frequency_dependent_individuals"
+    time_convert: 1 # Used to convert step_length in sim to the right scale
+                    # Just use 1 because no conversion is needed
+
+sim: # Simulation parameters
+    years: 20 # Length of simulation in years
+    days_per_year: 366  # Number days in a year
+    step_length: 3 # Step length of the model in days
+    temp_at_repro: 11.79 # The temperature at which reproduction occurs
+                         # Approximately 12 i.e. the spring
+    start_temp: 4 # Temperature at which to start the simulation
+    repro_first: TRUE # Reproduce the first time the temperature occurs
+
+    min_size: -5 # Minimum size for the IPM
+    max_size: 18 # Maximum size for the IPM
+    bins: 30 # Bin size for the IPM
+
+    stochastic: TRUE # Determine whether or not to run a stochastic sim.
+
+ssmod: # Parameter for the stage structured model
+    repro: 50.0 # Mean reproduction per individual
+    uninfected_adult_repro_prob: 0.25 # From Briggs et al 2005. Parameter p_F
+
+    # An exponential decline in reproduction given infection. As infection
+    # becomes greater the probability of reproducing becomes smaller and
+    # smaller.
+    repro_decline: 0.0 # 0.25
+
+    # Specifies the tradeoff between resistance and reproduction. Not used
+    resistance_trade_off: [-0.01, 12.0] # a and b parameter for logit(p) = a + b*x
+
+    K: 5 #19 # Carrying capacity of population. Ricker recruitment
+    tad_stages: 3 # Number of tadpole stages, from Briggs et al. 2005
+    juv_stages: 0 # No juvenile stages
+    init_tad_vals: [85, 12, 3] # Tadpoles numbers from stable_stage_structure.R file. Based of off init_adults
+    init_adult_val: 10 # Initial number of uninfected adults
+    init_zspore_val: 0 # Initial number of zoospores in the pool
+
+    # Transitions
+    tad_transitions: [1, 1, 1] # Tadpole survival probs. 1 in the yearly model because death happens in the IPM model
+    tad_not_adult: [1.0, 0.5, 0.0] # Probability of tadpole not metamorphosing. From Briggs et al. 2005
+    tad_meta_surv: [0.9, 0.9, 1.0] # Probability of surviving metamorphosis. Parameters from Briggs et al. 2005

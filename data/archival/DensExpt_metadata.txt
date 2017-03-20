@@ -1,0 +1,25 @@
+Metadata for DensExpt.txt
+--------------------------
+
+swab_id: Unique ID for a given swab on a given frog on a given date
+Indiv_id: Individual frog ID
+Frog_or_Tadpole: 'F' for frog, 'T' for tadpole
+Tank_num: The tank number that the frog was housed in, 1-16
+Indiv_num: The tank-specific, frog number
+InitialFrogs: The number of frogs that started in the tank
+ZE: The measure of Bd zoospore equivalents (ZE) on a frog for a given swab
+ailve: Whether or not the frog was alive, 'yes' or 'no'
+site_name: "mesocosm density experiment"
+date_collected: the date the swab was collected
+Julian: The Julian date the swab was collected
+Day: The day of the experiment where 0 indicates the beginning.
+observer: Initials of person taking the swab
+species: Species of the frog
+lifestage: lifestage of the frog
+gosner_stage: The Gosner stage of the frog
+weight: The weight of the frog in grams
+svl: The snout-vent length of the frog in mm
+sex: The sex of the frog
+
+
+

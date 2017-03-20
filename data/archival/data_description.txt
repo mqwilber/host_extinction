@@ -1,0 +1,32 @@
+
+There are 16 tanks that are sort of in 4 blocks (in groupings of tanks 1-4, 5-8, 9-12, and 13-16; but I wouldn't be surprised if there really isn't a block effect). 
+
+In each of the 4 blocks there is:
+1 tank with 1 initially uninfected adult frog + 5 infected tadpoles
+1 tank with 4 initially uninfected adult frog + 5 infected tadpoles
+1 tank with 8 initially uninfected adult frog + 5 infected tadpoles
+1 tank with 16 initially uninfected adult frog + 5 infected tadpoles
+
+The adult frogs are uniquely identifiable with pittags, but we couldn't mark the tadpoles, so the 5 tadpoles in each tank are indistinguishable.
+
+We swabbed all individuals in each tank every week, but it took 2 days to do each set of sampling, so the sample events aren't exactly 1 week apart.  
+In the datafile, ZE is the Bd load measured in zoospore equivalents on the frog.
+
+The swab_id's mean the following:
+for frogs:  
+MDF1_4_JUL20 MDF= Mesocosm Density Frog
+1= Tank 1
+4= Frog 4 (Tank and Frog together uniquely identifies the individual for frogs)
+Jul20 = date in 2008
+
+for tadpoles (initially tadpoles; many went through metamorphosis during the experiment, but we continued to use this labelling): 
+MDT7_5_Aug5 MDT= Mesocosm Density Tadpole
+7= Tank 7
+5= Tadpole 5 (Tank and frog + date was used to match up the PCR results with the individual characteristics (e.g. gosner stage) for the swab.  Because the tadpoles are not tagged, 7_5 does not  refer to the same individual in tank 7 on every sampling date.)
+Aug 5 = date in 2008.
+
+The first few adult frogs that died were replaced with surplus uninfected frogs because we were initially trying to maintain the frog densities (that's why, e.g. there is a frog 1_17 in tank 1), but no replacements were made after that. 
+
+Let me know if you have any questions. 
+Thanks,
+Cherie
