@@ -8,7 +8,7 @@ The `code` directory contains two folders:
 
 `stat_analysis/`
     
-- This folder contains the scripts necessary to fit the various vital rate functions and transmission functions to the laboratory and mesocosm data. The results are saved as `*.rds` files which are used in the scripts iben in `model_analysis/`
+- This folder contains the scripts necessary to fit the various vital rate functions and transmission functions to the laboratory and mesocosm data. The results are saved as `*.rds` files which are used in the scripts in `model_analysis/`
 
 `model_analysis/`
 
