@@ -20,7 +20,7 @@ the statistical analysis of the vital rate functions and the transmission functi
 
 **WARNING**: With the default number of simulations and cores used in the analysis the `run_all.R` script may take >24 hours to run.  If you want to speed this up in order to play around with how the scripts are working (but, of course, at the cost of not getting a good summary of the stochastic simulations!), make the following changes to reduce the number of simulations.
 
-1. `sensitivity_analysis.R`: Line 50 -> Change to `SIMS = 10`
-2. `sensitivity_analysis_bayesian.R`:  Line 50 -> Change to `SIMS = 10`
-3. `zdecay_plots.R`: Line 30 -> Change to `sims = 10`
-4. `stochastic_multiseason_simulation.R`: Line 40 -> Change to `SIMS = 10`
+1. `model_analysis/sensitivity_analysis.R`: Line 50 -> Change to `SIMS = 10`
+2. `model_analysis/sensitivity_analysis_bayesian.R`:  Line 50 -> Change to `SIMS = 10`
+3. `model_analysis/zdecay_plots.R`: Line 30 -> Change to `sims = 10`
+4. `model_analysis/stochastic_multiseason_simulation.R`: Line 40 -> Change to `SIMS = 10`
