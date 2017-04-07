@@ -26,7 +26,3 @@ MDT7_5_Aug5 MDT= Mesocosm Density Tadpole
 Aug 5 = date in 2008.
 
 The first few adult frogs that died were replaced with surplus uninfected frogs because we were initially trying to maintain the frog densities (that's why, e.g. there is a frog 1_17 in tank 1), but no replacements were made after that. 
-
-Let me know if you have any questions. 
-Thanks,
-Cherie
